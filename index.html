@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>DigiScribe Transcription Corp</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i,Montserrat:300,400,500,700" rel="stylesheet">
+
+  
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+  
+
+ 
+  <link href="css/style.css" rel="stylesheet">
+	
+	
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
+<style>
+	
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
+	
+<style>	
+body {font-family: "Palatino Linotype", sans-serif;}
+* {box-sizing: border-box;}
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+  background-color: #00563B;
+  color: white;
+  padding: 20px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 230px;
+  height: auto;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  border: solid #5F8575;
+  justify-content: center;
+  border-width: thick;
+align-items: center;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 500px;
+  padding: 10px;
+  background-color: white;
+	justify-content: center;
+	}
+
+
+/* Full-width textarea */
+.form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 44px 22px 0px;
+  border: none;
+  background: #f1f1f1;
+  resize: none;
+  min-height: 200px;
+  font-size: 20px;
+	
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+  background-color: #00563B;
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: red;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 80%;
+}
+	
+</style>
+
+
+</head>
+<body>
+
+  
+  <header id="header">
+    <div class="container-fluid">
+
+      <div id="logo" class="pull-left">
+        <img src="img/digiscribe.png" alt="" title="">
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#intro">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li class="menu-has-children"><a href="#services">Services</a>
+            
+          </li>
+          <li><a href="#getaquote">Get a Quote</a></li>
+          
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro">
+    <div class="intro-container">
+      <div id="introCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
+
+        <ol class="carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <div class="carousel-item active">
+            <div class="carousel-background"><img src="img/work1.jpg" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2>We are a business process outsourcing company</h2>
+                <p>We are focus on transcription services. We have been in the business for almost 20 years. We are eager to find new partners in providing outsourced services that we can provide.</p>
+                <a href="#services" class="btn-get-started scrollto">Get Started</a>
+              </div>
+            </div>
+          </div>
+			
+          <div class="carousel-item">
+            <div class="carousel-background"><img src="img/logo1.jpg" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2> We provide excellent services </h2>
+                <p>We are a medical, academic and general transcription services contractor. We contract with US, Canada, Australia, UK, and Singapore based companies to provide cost savings for their transcription service requirements without sacrificing quality & TAT. We work with any medical specialty and offer quality services with quick turn around time. We work with individual doctors as well as transcription & EMR companies.</p>
+                <a href="#services" class="btn-get-started scrollto">Get Started</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="carousel-background"><img src="img/service1.jpg" alt=""></div>
+            <div class="carousel-container">
+              <div class="carousel-content">
+                <h2>We guarantee quality and affordable transcription</h2>
+                <p>We also provide Subtitling, Caption and Translation services together with our transcription services. We have done projects like data processing, data conversion, and the like as well.</p>
+                <a href="#services" class="btn-get-started scrollto">Get Started</a>
+              </div>
+            </div>
+          </div>
+
+          
+
+        </div>
+
+        <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+
+        <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon ion-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+	<!-- #intro -->
+	
+	
+
+  <main id="main">
+
+    <!--==========================
+      Featured Services Section
+    ============================-->
+    
+
+    <!--==========================
+      About Us Section
+    ============================-->
+    <section id="about">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>About Us</h3>
+          <p><strong>Quality Transcription at Affordable Rates</strong></p>
+        </header>
+
+        <div class="row about-cols">
+
+          <div class="col-md-4 wow fadeInUp">
+            <div class="about-col">
+              <div class="img">
+                <img src="#" alt="" class="img-fluid">
+                <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+              </div>
+              <h2 class="title"><a href="#">Our Mission</a></h2>
+              <p>
+                To continously work on strengthening the relationship with our clients and their customers.Our comitted team are devoted to exceeding expectation and facilitating all of your business outsourcing needs.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="about-col">
+              <div class="img">
+                <img src="#" alt="" class="img-fluid">
+                <div class="icon"><i class="ion-ios-list-outline"></i></div>
+              </div>
+              <h2 class="title"><a href="#">Our Goal</a></h2>
+              <p>
+                Improve the quality and affordability of our services to become the world's best Transcription Service Provider.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="about-col">
+              <div class="img">
+                <img src="#" alt="" class="img-fluid">
+                <div class="icon"><i class="ion-ios-eye-outline"></i></div>
+              </div>
+              <h2 class="title"><a href="#">Our Vision</a></h2>
+              <p>
+                To become a Medical Transcription service provider renowned for accuracy, reliability and excellence.
+              </p>
+            </div>
+          </div>
+          
+           <div class="col-md-4 wow fadeInUp">
+            <div class="about-col">
+              <div class="img">
+                <img src="#" alt="" class="img-fluid">
+                <div class="icon"><i class="material-icons">face</i></div>
+              </div>
+              <h2 class="title"><a href="#">100% Human</a></h2>
+              <p>Our Transcriptions are 100% human generated. We do not rely on machine learning or artificial intelligence.</p>
+            </div>
+          </div>
+			
+			<div class="col-md-4 wow fadeInUp">
+            <div class="about-col">
+              <div class="img">
+                <img src="#" alt="" class="img-fluid">
+                <div class="icon"><i class="material-icons">check</i></div>
+              </div>
+              <h2 class="title"><a href="#">Compliance</a></h2>
+              <p>The company provides accurate transcription services to its client through its experienced staff and extensive in-house training under a HIPAA compliant environment.</p>
+            </div>
+          </div>
+			
+			<div class="col-md-4 wow fadeInUp">
+            <div class="about-col">
+              <div class="img">
+                <img src="#" alt="" class="img-fluid">
+                <div class="icon"><i class="material-icons">schedule</i></div>
+              </div>
+              <h2 class="title"><a href="#">Experience</a></h2>
+              <p>We have been in the business for 20 years. </p>
+            </div>
+          </div>
+			
+			<div class="col-md-4 wow fadeInUp">
+            <div class="about-col">
+              <div class="img">
+                <img src="#" alt="" class="img-fluid">
+                <div class="icon"><i class="material-icons">adjust</i></div>
+              </div>
+              <h2 class="title"><a href="#">Accuracy</a></h2>
+              <p>All our grading systems and quality audits are based on AAMT guidelines, and we can guarantee no less than 99.5% accuracy.</p>
+            </div>
+          </div>
+			
+			<div class="col-md-4 wow fadeInUp">
+            <div class="about-col">
+              <div class="img">
+                <img src="#" alt="" class="img-fluid">
+                <div class="icon"><i class="material-icons">cases</i></div>
+              </div>
+              <h2 class="title"><a href="#">Professionalism</a></h2>
+              <p>DigiScribe uses a multilevel transcription and editing process to ensure accurate reports. Each dictation downloaded by the company is meticulously transcribed by trained MT's. This is then proofread by experienced editors and finally checked by our quality assurance personnel for its accuracy before it is returned to our clients.</p>
+            </div>
+          </div>
+			
+			<div class="col-md-4 wow fadeInUp">
+            <div class="about-col">
+              <div class="img">
+                <img src="#" alt="" class="img-fluid">
+                <div class="icon"><i class="material-icons">paid</i></div>
+              </div>
+              <h2 class="title"><a href="#">Affordability</a></h2>
+              <p>Our company is one of the most cheapest transcription service provider in the world without sacrificing quality and accuracy.</p>
+             
+            </div>
+          </div>
+		
+        </div>
+
+      </div>
+    </section><!-- #about -->
+		
+    <!--==========================
+      Services Section
+    ============================-->
+    <section id="services">
+      <div class="container">
+
+        <header class="section-header wow fadeInUp">
+          <h3>Services</h3>
+          <p><strong>Digiscribe Transcription Corp.</strong> is a Philippine based company focused on providing accurate and reliable back end support. Digiscribe provides transcription services, captions, translations, subtitling, data entry, CADD services, data conversion, EMR data processing, medical coding and other specialized back office support. We can customize our services depending on the needs of our clients.</p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            
+			<a href="#transcriptionservices"><img src="img/transcription_services.jpg" style="border:5px solid #0000FF; padding:3px; margin:5px" alt="" class="img-fluid"></a>
+			  <p>Digiscribe is committed in giving high quality Transcriptions at lowest price. Our services are as follows.</p>
+			  
+			  <ul>
+			  <li>General Transcription</li>
+			  <li>Medical Transcription</li>
+			  <li>Academic Transcription</li>
+			  <li>Reserch Transcription</li>
+			  <li>Verbatim Transcription</li>
+			  <li>EMR/EHR Transcription</li>
+			  <li>Audio to Text</li>
+			  <li>Video to Text</li>
+			  </ul>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+           
+			 <a href="#captions"><img src="img/captions_service.jpg" style="border:5px solid #0000FF; padding:3px; margin:5px" alt="" class="img-fluid"></a>
+			  <p>Utilize Digiscribe's first-rate captioning service to take your digital content to new heights. Our accomplished experts delicately create precise and compelling captions that seamlessly match your videos, maximizing their impact and guaranteeing inclusivity. Whether it's for social media, educational materials, or marketing campaigns, our dynamic captions captivate audiences, spark interest, and drive engagement. Experience how Digiscribe's ground-breaking captioning service can differentiate your brand in the digital landscape by enhancing accessibility and extending your audience. Count on us to breathe life into your content and leave viewers with a memorable impression.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            
+		    <a href="#translations"><img src="img/translation_service.jpg" style="border:5px solid #0000FF; padding:3px; margin:5px" alt="" class="img-fluid"></a>
+			  <p>Unlock a world of seamless communication with Digiscribe's unrivaled translation services. Our team of expert linguists specializes in delivering accurate and culturally nuanced translations that resonate with your target audience. We ensure your message is consistent across languages and borders in everything from technical documents to marketing materials. With Digiscribe, you can confidently extend your global reach while experiencing the transformative power of accurate translation. Say goodbye to language barriers and embrace a new era of international success with Digiscribe by your side.</p>
+			  
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+           
+            <a href="#subtitling"><img src="img/subtitling_service.jpg" style="border:5px solid #0000FF; padding:3px; margin:5px" alt="" class="img-fluid"></a>
+			  <p>Discover the transformative impact of Digiscribe's Subtitling services Easily connect with audiences from different cultures while overcoming language barriers. Our knowledgeable team of subtitle experts meticulously creates accurate and visually appealing subtitles, enhancing the viewing experience and ensuring your message is understood by viewers everywhere. With our seamless synchronization and precise translations, your content becomes accessible to a global audience, expanding your reach and driving engagement. Trust Digiscribe's Subtitling services to unlock the true potential of your videos, movies, and multimedia projects.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+           
+           <a href="#dataentry"><img src="img/dataentry_service.jpg" style="border:5px solid #0000FF; padding:3px; margin:5px" alt="" class="img-fluid"></a>
+			  <p>With Digiscribe's data entry services, transform the way you manage your data. Our team of experts gathers, digitizes, and arranges data from a variety of sources while ensuring accuracy and precision at every turn. We offer effective, scalable solutions catered to your unique needs using streamlined workflows and cutting-edge automation tools. Put your trust in Digiscribe to protect your data and give you accurate insights for wise decision-making.</p>
+			  	<ul>
+			  <li>Copy Paste</li>
+			  <li>Data Entry</li>
+			  <li>Data Cleansing</li>
+			  <li>Document Conversion</li>
+			  <li>Error Detection</li>
+			  <li>List Building</li>
+			  <li>Product Listing</li>
+			  <li>Word Processing</li>
+			  <li>Batch Proof Reports</li>
+			  <li>Data Mining</li>
+			  <li>CRM Data Entry</li>
+			  </ul>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+           
+            <a href="#cadd"><img src="img/cadd_service.jpg" style="border:5px solid #0000FF; padding:3px; margin:5px" alt="" class="img-fluid"></a>
+			  <p>Digiscribe is proud to be your go-to supplier for cutting-edge CADD services. We bring your architectural and engineering visions to life with accuracy and efficiency thanks to our expertise in computer-aided design and drafting.  Utilizing cutting-edge tools and methodologies, our team of knowledgeable experts creates precise and comprehensive designs, ensuring efficient project execution. With Digiscribe, you can find unmatched CADD solutions and expand the possibilities for your business.</p>
+          </div>
+			<div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            
+           <a href="#dataconvert"><img src="img/dataconversion_service.jpg" style="border:5px solid #0000FF; padding:3px; margin:5px" alt="" class="img-fluid"></a>
+				<p>Introducing Digiscribe, your go-to source for all data conversion requirements. We quickly and accurately convert your physical records, documents, and files into digital formats thanks to our 20 years of service and highly skilled team. Digiscribe allows you to embrace digital data's efficiency and accessibility while bidding farewell to the hassle of manual data entry. Put your trust in us to simplify your company's operations and unleash the power of your data.</p>
+          </div>
+			<div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+           
+          <a href="#emrprocess"><img src="img/emrdata_service.jpg" style="border:5px solid #0000FF; padding:3px; margin:5px" alt="" class="img-fluid"></a>
+				<p>Digiscribe can help you harness the power of efficient EMR data processing. Our all-inclusive solutions integrate seamlessly with your current systems, streamlining workflows and increasing productivity. Trust Digiscribe to produce accurate and timely results for everything from data entry and extraction to secure storage and analysis. With Digiscribe, you can experience the future of healthcare management and take your business to new levels of success and productivity.</p>
+          </div>
+			<div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+           
+           <a href="#"><img src="img/medical_coding_service.jpg" style="border:5px solid #0000FF; padding:3px; margin:5px" alt="" class="img-fluid"></a>
+				<p>Revolutionize your medical coding process with Digiscribe, the trusted name in healthcare solutions. Our comprehensive suite of cutting-edge tools and expert coding professionals guarantee swift and accurate coding, minimizing errors and maximizing revenue potential. We take care of everything, from complicated diagnoses to intricate procedures, making sure that it all complies with your existing systems and works seamlessly. Discover the power of Digiscribe to improve patient outcomes, save money, and operate with unmatched efficiency. Join the ranks of satisfied clients who have elevated their coding performance with Digiscribe, and discover a world of possibilities for your healthcare organization.</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #services -->
+	  
+	  <!--Transcription Services-->
+	  
+	  
+	  <section id="transcriptionservices">
+      <div class="container">
+
+        <header class="section-header wow fadeInUp">
+          <h3>Transcription Services</h3>
+        </header>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+           
+			<a href=""><img src="img/generaltranscription_service.jpg" style="border:5px solid #0000FF; padding:3px; margin:5px" alt="" class="img-fluid"></a>
+			  <p>With Digiscribe's General Transcription Service, you can experience the pinnacle of transcription excellence. Our hardworking team of specialists excels at turning audio and video files into flawless, polished transcripts. We provide timely and accurate results that are adapted to meet your unique requirements using cutting-edge tools and an unwavering commitment to accuracy. Let Digiscribe's dependable expertise streamline your workflow, saving you time and money so you can focus on growing your company. You can rely on us to transcribe accurately and raise the bar for your documentation.</p>
+			  
+			  <ul>
+			  <li>Podcast</li>
+			  <li>Video Transcription(Interviews,Video Content, Podcast, Documentaries)</li>
+			  <li>Academic(Dissertations, Interviews, Seminars, Webinars, Meetings)</li>
+			  <li>Marketing(Meetings, Phone Calls, Video Contents)</li>
+			  </ul>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            
+			 <a href=""><img src="img/medical_transcription_service.jpg" style="border:5px solid #0000FF; padding:3px; margin:5px" alt="" class="img-fluid"></a>
+			  <p>Digiscribe's medical transcription service is your trusted partner in delivering compassionate and dependable transcription  solutions for patients. Our experienced  and innovative team guarantee secure and effective transfers, giving peace of mind to healthcare professionals and those in need of dependable transcription.</p>
+			  <ul>
+			  <li>Reports</li>
+			  <li>Medical History</li>
+			  <li>Research Interviews</li>
+			  <li>Consultations</li>
+			  <li>Discharge Summaries</li>
+			  </ul>
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+           
+		    <a href=""><img src="img/academic_transcription.jpg" style="border:5px solid #0000FF; padding:3px; margin:5px" alt="" class="img-fluid"></a>
+			  <p>Experience academic transcription redefined with Digiscribe. Our advanced technology and expert team seamlessly convert educational content into accurate and searchable transcripts, empowering students, professors, and researchers to efficiently explore, analyze, and share valuable knowledge with precision and ease.</p>
+			  
+          </div>
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            
+            <a href=""><img src="img/research_transcription.jpg" style="border:5px solid #0000FF; padding:3px; margin:5px" alt="" class="img-fluid"></a>
+			  <p>Converting academic research into understandable knowledge. Our professional transcription services expertly transform complex academic research into clear and accurate transcripts, enabling scholars and researchers to readily share and disseminate their significant insights with the world.</p>
+          </div>
+			
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            
+            <a href=""><img src="img/verbatim_service.jpg" style="border:5px solid #0000FF; padding:3px; margin:5px" alt="" class="img-fluid"></a>
+			  <p>For the best verbatim transcription services, choose Digiscribe. We are the ideal partner for legal, research, and interview transcriptions because we thoroughly pay attention to every word, pause, and intonation, ensuring that your content stays true to the original source.</p>
+          </div>
+			
+          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            
+            <a href=""><img src="img/emr_service.jpg" style="border:5px solid #0000FF; padding:3px; margin:5px" alt="" class="img-fluid"></a>
+			  
+			  <p>With the innovative EMR/EHR transcription service from Digiscribe, transform your medical practice. Save time and improve patient care by easily streamlining patient documentation and achieving higher accuracy.</p>
+          </div>
+			
+			<div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            
+            <a href=""><img src="img/audiototext_service.jpg" style="border:5px solid #0000FF; padding:3px; margin:5px" alt="" class="img-fluid"></a>
+				<p>Experience the ease of using Digiscribe's Audio to Text service, which converts your audio recordings into text without any effort, allowing you to quickly search, examine, and share your valuable content. Utilize our precise and effective transcription solution to free up time and improve workflow.</p>
+          </div>
+			
+			<div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            
+            <a href=""><img src="img/videototext_service.jpg" style="border:5px solid #0000FF; padding:3px; margin:5px" alt="" class="img-fluid"></a>
+				<p>Take your video strategy to new heights with Digiscribe's dynamic video-to-text conversion service. Open up a world of possibilities for transcription, translation, and content repurposing by turning spoken words into written text.</p>
+          </div>
+			<div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+          
+           <a href=""><img src="img/other_service.jpg" style="border:5px solid #0000FF; padding:3px; margin:5px" alt="" class="img-fluid"></a>
+          </div>
+        </div>
+		  
+		   </div>
+    </section>
+	
+	  	  <section id="call-to-action" class="wow fadeIn">
+      <div class="container text-center">
+       <h6 class="hidden" style="visibility: hidden;">This text is hidden from users </h6>
+      </div>
+    </section>
+	  
+	<section id="ourpreviousworks">
+      <div class="container">
+
+        <header class="section-header wow fadeInUp">
+          <h3>Our Previous Works</h3>
+  
+	<div class="row">
+ 
+  <div class="column">
+    <img src="img/practice_fusion_1.png" alt="" style="width:100%">
+  </div>
+   <div class="column">
+    <img src="img/practice_fusion_2.png" alt="" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="img/practice_fusion_4.jpg" alt="" style="width:100%">
+  </div>
+  
+	</div>
+
+        </header>
+		  
+		   </div>
+    </section>
+	  
+<section id="testimonials" class="section-bg wow fadeInUp">      
+	<div class="container">        
+		<header class="section-header">          
+			<h3>Awards and Recognitions</h3>        
+		</header>        
+		<div class="owl-carousel testimonials-carousel">         
+			<div class="testimonial-item">            
+				<img src="img/apac.jpg" class="testimonial-img" alt="">            
+				<h3>Apac Insider</h3>            
+			          
+				<p>              
+					<img src="img/quote-sign-left.png" class="quote-sign-left" alt="">              South East Asia Business Awards :
+				<strong>BPO Consultancy of the Year - Philippines</strong>
+					<img src="img/quote-sign-right.png" class="quote-sign-right" alt="">            
+				</p>          
+			</div>          
+			<div class="testimonial-item">            
+				<img src="img/infoisinfo.jpg" class="testimonial-img" alt="">           
+				<h3>Infoisinfo</h3>            
+			          
+				<p>              <img src="img/quote-sign-left.png" class="quote-sign-left" alt="">              The 10 Best Medical Transcription Services in Philippines : <strong>2nd Place</strong>             
+					<img src="img/quote-sign-right.png" class="quote-sign-right" alt="">            
+				</p>          
+			</div>          
+			<div class="testimonial-item">            
+				<img src="img/BestStartup.asia-Logo.jpg" class="testimonial-img" alt="">           
+				<h3>Best Startup Asia</h3>           
+			         
+				<p>              
+				<img src="img/quote-sign-left.png" class="quote-sign-left" alt="">              <strong>81 Top Philippines Health Care Companies and Startups of 2021</strong>              
+					<img src="img/quote-sign-right.png" class="quote-sign-right" alt="">            
+				</p>          
+			
+			</div>     
+			<div class="testimonial-item">            
+				<img src="img/prlogmodified.png" class="testimonial-img" alt="">           
+				<h3>PRLOG</h3>                      
+				<p>              
+				<img src="img/quote-sign-left.png" class="quote-sign-left" alt="">              <strong>Recognized by Phil. Top Choice Awards for Excellence</strong>              
+					<img src="img/quote-sign-right.png" class="quote-sign-right" alt="">            
+				</p>          
+			
+			</div>     
+		</div>
+	</div>   
+		</section><!-- #testimonials -->
+
+	  
+    	<section id="getaquote">
+      <div class="container">
+
+        <header class="section-header wow fadeInUp">
+          <h3>Get a Quote</h3>
+  
+        </header>
+		 
+		   </div>
+    </section>
+	  
+    <!--==========================
+      Contact Section
+    ============================-->
+    <section id="contact" class="section-bg wow fadeInUp">
+      <div class="container">
+
+        <div class="section-header">
+          <h3>Contact Us</h3>
+          <p></p>
+        </div>
+
+        <div class="row contact-info">
+
+          <div class="col-md-4">
+            <div class="contact-address">
+              <i class="ion-ios-location-outline"></i>
+              <h3>Address</h3>
+              <address><strong>3rd Flr VICMAR Bldg, P Burgos St, Barangay 10 Batangas City Philippines 4200</strong></address>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-phone">
+              <i class="ion-ios-telephone-outline"></i>
+              <h3>Phone Number</h3>
+              <p><a href="tel:+639178194131"><strong>+63917 819 4131</strong></a></p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-email">
+              <i class="ion-ios-email-outline"></i>
+              <h3>Email</h3>
+              <p><a href="mailto:info@digiscribeasiapacific.com"><strong>info@digiscribeasiapacific.com</strong></a></p>
+            </div>
+          </div>
+
+        </div>
+
+        
+      </div>
+    </section><!-- #contact -->
+	  
+<button class="open-button" onclick="openForm()">Message Us</button>
+
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h2><b>How can we help you?</b></h2>
+
+    <label for="msg"><b></b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+   <button type="submit" class="btn">Send</button>
+   <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+<script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
+
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+		  
+
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h3>DTC</h3>
+            <p>We are a medical, academic and general transcription company based in Batangas.
+We offer free training, with allowances for those who have no experience in  Transcription and for those who are willing to be trained.  You will have a chance to get hired once you pass the training.</p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#">Home</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#about">About us</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="#services">Services</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="Terms_of_Service.html">Terms of Service</a></li>
+              <li><i class="ion-ios-arrow-right"></i> <a href="Privacy_Policy.html">Privacy Policy</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              3rd Flr VICMAR Bldg, P Burgos St  <br>
+              Barangay 10 Batangas City<br>
+              Philippines 4200 <br>
+              <strong>Phone:</strong> (043) 233-2050<br>
+              <strong>Email:</strong>  info@digiscribeasiapacific.com <br>
+            </p>
+
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="https://www.facebook.com/digiscribeasipacific" class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+              <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-newsletter">
+            <h4>Our Newsletter</h4>
+            
+            <form action="#" method="post">
+              <input type="email" name="email"><input type="submit"  value="Subscribe">
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>DigiScribe Transcription Corp</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=BizPage
+        -->
+        <a href="https://bootstrapmade.com/"></a>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <!-- Uncomment below i you want to use a preloader -->
+  <!-- <div id="preloader"></div> -->
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <script src="lib/touchSwipe/jquery.touchSwipe.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>
